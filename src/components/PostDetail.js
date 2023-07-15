@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { deletePost } from '../store/actions/postAction';
 
 export const PostDetail = ({post}) => {
+  // ti ga sa dispatch direktno saljes u store koji posle hvata podatke koje je postAction ima
   const dispatch = useDispatch();
   return (
     <div className="col s12 m6">
